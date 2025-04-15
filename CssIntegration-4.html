@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Hello</title>
+    </head>
+    <body>
+        <div id="box">
+        <h1 id="good">Good Morning!!</h1>
+        </div>
+        <style>
+            div{
+                background-color: blue;
+                width : 200px;
+                height : 200px;
+                transition:5s;
+            }
+            .widthex{
+                width: 1000px;
+            }
+        </style>
+        <button onclick="change()">Click!!</button>
+    </body>
+
+    <script>
+        var a = document.getElementById("good")
+        console.log(a)
+        console.log(a.textContent)
+        function change(){
+            box.style.backgroundColor = "red"
+            box.setAttribute("class","widthex")
+            console.log(a.textContent = "Tharu")
+        }
+    </script>
+</html>

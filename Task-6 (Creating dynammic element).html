@@ -1,0 +1,16 @@
+<!-- ********** Creating element dynamically ************* -->
+
+<input>
+<button onclick="change()">Click to add!</button>
+<div id="result"></div>
+
+<script>
+
+    var result = document.getElementById("result")
+    
+    function change(){
+        var final = document.createElement("h1")
+        final.textContent = "Hello"
+        result.append(final)
+    }
+</script>

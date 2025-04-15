@@ -1,0 +1,16 @@
+<!-- ********************** Event to add dynamically access textContent ************************ -->
+
+<h1 id="result">Hello</h1>
+
+<button onclick="change(event)">Tharun</button>
+<button onclick="change(event)">Srinivaas</button>
+<button onclick="change(event)">Ravichandran</button>
+
+<script>
+    var result = document.getElementById("result")
+    
+    function change(event){
+        console.log(event.target.textContent)
+        result.textContent = event.target.textContent
+    }
+</script>

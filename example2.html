@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Example 2</title>
+    </head>
+    <body>
+        <h1>Welcome</h1>
+        <input type="number" id="num1">
+        <br>
+        <input type="number" id="num2">
+        <br>
+        <button onclick="change()">Click to Add!</button>
+        <p id="result"></p>
+    </body>
+   
+    <script>
+        var num1 = document.getElementById("num1")
+        var num2 = document.getElementById("num2")
+        
+        // Before 2:05:00
+        // closing tag ku mattum dha textContent vela seiyum. So , input tag kaaga value use panrom 
+        // aana adhu string ah varu enaku number venu. So, Number() ah typecasting panrom
+
+    function change(){
+        var result =  document.getElementById("result")
+        
+        var total = Number(num1.value)+ Number(num2.value)
+        result.textContent = total
+    }
+        
+    </script>
+</html>

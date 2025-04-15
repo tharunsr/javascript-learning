@@ -1,0 +1,19 @@
+<!-- ************ onkeyup ************* -->
+
+<html>
+    <head>
+        <link rel="icon" href="assets/Screenshot 2025-04-09 at 11.41.34 AM.png">
+        <title>Task-5</title>
+    </head>
+    <body>
+        <input type="text" id="inputbox" onkeyup="change()">
+        <h1 id="result"></h1>
+    </body>
+    <script>
+        var inputbox = document.getElementById("inputbox")
+        var result = document.getElementById("result")
+        function change(){
+            result.textContent = inputbox.value
+        }
+    </script>
+</html>

@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <link rel="icon" href="assets/Screenshot 2025-04-09 at 11.41.34 AM.png"></icon>
+        <title>Random Numbers</title>
+    </head>
+    <body>
+        <h1>Guess the number</h1>
+        <input type="number" id="enterednumber">
+        <button onclick="change()">Click!</button>
+        <h3 id="decision">Make your guess!!!</h3>
+        <p id="answer">Your Score is:0 </p>
+    </body>
+
+    <script>
+        
+        var enterednumber = document.getElementById("enterednumber")
+        var guess = Math.floor(Math.random()*10)+1
+        var decision = document.getElementById("decision")
+        var answer = document.getElementById("answer")
+        console.log(guess)
+        var score = 0
+        
+        function change(){
+
+            var input = enterednumber.value
+            console.log(input)
+        
+        if(input == guess){
+            score += 1
+            answer.textContent = "Your score is: " + score
+            decision.textContent = "Your guess is correct!"
+            alert("You won")
+        }
+        else{
+            score -= 1
+            answer.textContent = "Your score is: " + score
+            decision.textContent="Wrong guess! Try again"
+        }
+
+        }
+
+    </script>
+</html>
+
