@@ -1,0 +1,14 @@
+<div id="one">
+<h1>Hello</h1>
+<h1>Srinivaas</h1>
+</div>
+<script>
+   var one = document.getElementById("one")
+   var two = document.createElement("h1")
+   two.textContent = "tHARUN"
+   one.insertAdjacentElement("afterbegin",two) 
+   one.insertAdjacentText("afterend","Hi")
+   one.insertAdjacentText("beforeend","Hi")
+   one.insertAdjacentText("beforebegin","Hi")
+   one.prepend("hi")
+</script>

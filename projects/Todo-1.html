@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>To-do List</title>
+        <link rel="icon" href="../assets/JavaScript-logo.png">
+    </head>
+    <body>
+        <input type="text" id="entrypoint">
+        <button onclick="addingTask()">Add Task</button>
+        <ul id="task-container">
+        </ul>
+        
+        <script>
+            
+            var tasks = document.getElementById("task-container")
+            
+            function addingTask(){
+                
+                var newTask = document.createElement("li")
+                var entrypoint = document.getElementById("entrypoint")
+                // newTask.textContent = entrypoint.value
+                newTask.innerHTML = entrypoint.value + "<button onclick='deletingTask(event)'>Delete Task</button>"
+                tasks.append(newTask)
+            }
+
+            function deletingTask(event){
+                event.target.parentElement.remove()
+            }
+
+
+        </script>
+    </body>
+</html>

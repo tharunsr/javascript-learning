@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/download.jpeg">
+    <title>Booksky</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class = "popup-overlay"></div>
+    <div class="popup-box">
+        <form>
+            <h2 style="color: rosybrown;">Add a Book</h2>
+            <input type="text" placeholder="Book Title" id="book-title">
+            <input type="text" placeholder="Book Author" id="book-author">
+            <textarea placeholder="Book Description" id="book-description"></textarea>
+        </form>
+        <div class="buttons">
+        <button id="add-btn-popup">Add</button>
+        <div class="del-button">
+        <button id="close-button">Cancel</button></div>
+        </div>
+    </div>
+    
+    <div class="navbar">
+    <h2>BookSky</h2>
+    </div>
+
+    <div id="container">
+        <div id="list-container">
+            <h2>Hiiiii</h2>
+            <h5>Helloooooo</h5>
+            <p>Lorem ipsum dolor sit amet consectetasperiores earum iste, adis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum beatae harum laboriosam! Temporibus distinctio assumenda tempora perspiciatis corporis aliquam reprehenderit, voluptatum, nulla ducimus aperiam velit.</p>
+            <div class="del-button">
+            <button style="margin-left: 80%;" id="del-button-container" onclick="change(event)">Delete</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="add-button">
+        <button id="add-btn">+</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
